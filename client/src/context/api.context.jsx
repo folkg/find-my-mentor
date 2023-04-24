@@ -105,6 +105,9 @@ export function APIProvider(props) {
     }
   }
 
+  // TODO: Wrap this value in useMemo to prevent recalculatin on re-render
+  // TODO: Do we want to export the useContext from here as well as a useAPI hook to make it easier on the other components?
+
   return (
     <APIContext.Provider
       value={{

@@ -20,6 +20,8 @@ export function DarkModeProvider(props) {
     [darkMode]
   );
 
+  // TODO: Do we want to export the useContext from here as well as a useDarkMode hook to make it easier on the other components?
+
   return (
     <DarkModeContext.Provider value={contextValue}>
       <ThemeProvider theme={theme}>{props.children}</ThemeProvider>

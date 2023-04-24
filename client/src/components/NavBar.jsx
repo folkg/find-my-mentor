@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../context/theme.context";
-import { APIContext } from "../context/api-provider";
+import { APIContext } from "../context/api.context";
 import {
   Typography,
   AppBar,
